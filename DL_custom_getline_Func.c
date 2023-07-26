@@ -10,11 +10,11 @@
  */
 size_t get_line(char **dl_string_ch)
 {
-	static ssize_t dl_var = 0;
-	static ssize_t	dl_var_2 = 0;
-	static ssize_t dl_var_3 = 0;
-	static ssize_t _arg_data = 0;
-	static ssize_t dl_length_var = 0;
+	static ssize_t dl_var;
+	static ssize_t	dl_var_2;
+	static ssize_t dl_var_3;
+	static ssize_t _arg_data;
+	static ssize_t dl_length_var;
 	char __temporal_cacheBUFFER[BUFFER_SIZE];
 
 	while (dl_var_3 == 0 && (dl_var = read(STDIN_FILENO,
