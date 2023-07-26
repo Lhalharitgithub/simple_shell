@@ -34,5 +34,5 @@ void _cmd_unknown(char *dl_string_ch, int _xnv, DL_node_list_t *dl_surd)
 		itr_num++;
 	write(STDOUT_FILENO, dl_string_ch, itr_num);
 	write(STDOUT_FILENO, ": ", 2);
-	write(STDOUT_FILENO, "unknown arg passed\n", 20);
+	write(STDOUT_FILENO, "not found\n", 10);
 }
