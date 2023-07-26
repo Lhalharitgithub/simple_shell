@@ -13,7 +13,7 @@ void dl_inopt(DL_node_list_t *dl_surd)
 	int __shell_num = 0, _terminate_pos = 0;
 	char *_input_ = NULL, *_shell_pnt = NULL, **and_arg_shell, **g_dp;
 
-	dl_var = DL_get_line_custom_function(&_input_);
+	dl_var = get_line(&_input_);
 	if (dl_var == 0)
 	{
 		free(_input_);

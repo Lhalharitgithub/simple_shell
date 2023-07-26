@@ -21,7 +21,7 @@ int DL__simple_shell_prompt(char **ff_arg)
 		signal(SIGINT, copy_slt);
 		_input_ = NULL;
 		dl_var = 0;
-		dl_var = DL_get_line_custom_function(&_input_);
+		dl_var = get_line(&_input_);
 		cl_d_(dl_var, _input_, dl_surd);
 		_shell_pnt = _input_;
 		_input_ = discard_interval_func(_input_);

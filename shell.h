@@ -54,7 +54,7 @@ int dl__change_directory_func(char **dl_string_ch,
 		DL_node_list_t *dl_surd, int __dgt);
 
 
-size_t DL_get_line_custom_function(char **dl_string_ch);
+size_t get_line(char **dl_string_ch);
 
 
 int convertToInt(char *__var_string_arg);
