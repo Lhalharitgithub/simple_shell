@@ -23,8 +23,8 @@
 
 /**
  * struct DL_node_list_t - linked list of typedef struct.
- * @v_struct_arg: Arguement of struct.
- * @next: Arguement of struct.
+ * @v_struct_arg: Argument of struct.
+ * @next_arg: Argument of struct.
  *
  * Return: Returns nothing.
  */
