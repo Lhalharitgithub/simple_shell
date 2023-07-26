@@ -16,7 +16,8 @@ size_t DL_get_line_custom_function(char **dl_string_ch)
 	ssize_t dl_length_var = 0;
 	char __temporal_cacheBUFFER[1024];
 
-	while (dl_var_3 == 0 && (dl_var = read(STDIN_FILENO, __temporal_cacheBUFFER, 1024 - 1)))
+	while (dl_var_3 == 0 && (dl_var = read(STDIN_FILENO,
+					__temporal_cacheBUFFER, 1024 - 1)))
 	{
 		if (dl_var == -1)
 			return (-1);
@@ -42,7 +43,8 @@ size_t DL_get_line_custom_function(char **dl_string_ch)
 		else
 		{
 			dl_length_var += dl_var;
-			*dl_string_ch = dl_concatenated_string_func(*dl_string_ch, __temporal_cacheBUFFER);
+			*dl_string_ch = dl_concatenated_string_func(*dl_string_ch,
+					__temporal_cacheBUFFER);
 		}
 	}
 	return (dl_length_var);

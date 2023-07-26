@@ -37,7 +37,8 @@ int convertToInt(char *__var_string_arg)
  *
  * Return: Returns 2 or 0.
  */
-int dl_rm_func(char **dl_string_ch, DL_node_list_t  *dl_surd, int __dgt, char **_input_)
+int dl_rm_func(char **dl_string_ch,
+		DL_node_list_t  *dl_surd, int __dgt, char **_input_)
 {
 	int trWorth = 0;
 

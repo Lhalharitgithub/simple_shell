@@ -22,6 +22,7 @@
 
 
 /**
+ * struct node_list - A typedef struct
  * struct DL_node_list_t - linked list of typedef struct.
  * @v_struct_arg: Argument of struct.
  * @next_arg: Argument of struct.
@@ -46,9 +47,11 @@ int surd_ang(DL_node_list_t **dl_surd, char *annotation, char *path_dircect);
 
 void _func_chd(DL_node_list_t *dl_surd, char *__now_func);
 
-int chd_wkec(DL_node_list_t *dl_surd, char *__now_func, char *path_dircect, char *dl_string_ch, int __dgt);
+int chd_wkec(DL_node_list_t *dl_surd, char *__now_func,
+		char *path_dircect, char *dl_string_ch, int __dgt);
 
-int dl__change_directory_func(char **dl_string_ch, DL_node_list_t *dl_surd, int __dgt);
+int dl__change_directory_func(char **dl_string_ch,
+		DL_node_list_t *dl_surd, int __dgt);
 
 
 size_t DL_get_line_custom_function(char **dl_string_ch);
@@ -57,11 +60,13 @@ size_t DL_get_line_custom_function(char **dl_string_ch);
 int convertToInt(char *__var_string_arg);
 
 
-int dl_rm_func(char **dl_string_ch, DL_node_list_t  *dl_surd, int __dgt, char **_input_);
+int dl_rm_func(char **dl_string_ch, DL_node_list_t  *dl_surd,
+		int __dgt, char **_input_);
 
 
 
-void *dl_resize_memory(void *dl_memoryBlock, unsigned int _prior_capacity, unsigned int _revised_capacity);
+void *dl_resize_memory(void *dl_memoryBlock,
+		unsigned int _prior_capacity, unsigned int _revised_capacity);
 
 
 
@@ -90,14 +95,16 @@ int mod_LL(DL_node_list_t **dl_surd, char **dl_string_ch);
 
 
 void copy_slt(int fd_arg);
-int stack_const(char **g_dp, DL_node_list_t *dl_surd, int __dgt, char **_input_);
+int stack_const(char **g_dp, DL_node_list_t *dl_surd,
+		int __dgt, char **_input_);
 char *discard_interval_func(char *dl_string_ch);
 void cl_d_(int dl_var, char *_input_, DL_node_list_t *dl_surd);
 int DL__simple_shell_prompt(char **dl_surd);
 
 
 
-int custom_string_len_func(char *dl_string_ch, int current_location, char nth_argument);
+int custom_string_len_func(char *dl_string_ch,
+		int current_location, char nth_argument);
 int _struct_lenght(char *dl_string_ch, char nth_argument);
 char *argn_kml(char *dl_string_ch, char nth_argument);
 char **func_sub_string(char *dl_string_ch, char *nth_argument);
@@ -109,7 +116,8 @@ char **func_sub_string(char *dl_string_ch, char *nth_argument);
 int dlNL(int fd_arg);
 char *dlConvert_intToStr(int __dgt_num);
 void nth_ex_arg(char **dl_string_ch, DL_node_list_t *dl_surd);
-int func_dl_execve(char **__var_string_arg, DL_node_list_t *dl_surd, int __dgt);
+int func_dl_execve(char **__var_string_arg,
+		DL_node_list_t *dl_surd, int __dgt);
 
 
 

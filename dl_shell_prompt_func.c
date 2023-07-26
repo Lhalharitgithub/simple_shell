@@ -7,18 +7,9 @@
 int DL__simple_shell_prompt(char **ff_arg)
 {
 	DL_node_list_t *dl_surd;
-	size_t dl_var;
-	size_t fd_arg;
-	int __shell_num;
-	int _terminate_pos;
-	char *_input_;
-	char *_shell_pnt;
-	char **g_dp;
-
-	dl_var = 0;
-	fd_arg = 0;
-	__shell_num = 0;
-	_terminate_pos = 0;
+	size_t dl_var = 0, fd_arg = 0;
+	int __shell_num = 0, _terminate_pos = 0;
+	char *_input_, *_shell_pnt, **g_dp;
 
 	dl_surd = Lsurd_node_dl(ff_arg);
 	do {
@@ -28,7 +19,8 @@ int DL__simple_shell_prompt(char **ff_arg)
 		else
 			dl_inopt(dl_surd);
 		signal(SIGINT, copy_slt);
-		_input_ = NULL; dl_var = 0;
+		_input_ = NULL;
+		dl_var = 0;
 		dl_var = DL_get_line_custom_function(&_input_);
 		cl_d_(dl_var, _input_, dl_surd);
 		_shell_pnt = _input_;
@@ -39,9 +31,11 @@ int DL__simple_shell_prompt(char **ff_arg)
 		_input_[fd_arg] = '\0';
 		if (_input_[0] == '\0')
 		{
-			free(_shell_pnt); continue;
+			free(_shell_pnt);
+			continue;
 		}
-		g_dp = NULL; g_dp = func_sub_string(_input_, " ");
+		g_dp = NULL;
+		g_dp = func_sub_string(_input_, " ");
 		if (_shell_pnt != NULL)
 			free(_shell_pnt);
 		_terminate_pos = stack_const(g_dp, dl_surd, __shell_num, NULL);

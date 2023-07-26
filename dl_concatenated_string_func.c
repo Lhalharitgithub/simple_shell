@@ -33,7 +33,8 @@ char *dl_concatenated_string_func(char *_allocation, char *_input_origin)
 		_ln_size++;
 		_ln_size_sum_int++;
 	}
-	_allocation = dl_resize_memory(_allocation, size_ln, sizeof(char) * _ln_size_sum_int + 1);
+	_allocation = dl_resize_memory(_allocation, size_ln,
+			sizeof(char) * _ln_size_sum_int + 1);
 
 	while (_input_origin[dl_var_int] != '\0')
 	{

@@ -14,7 +14,8 @@ char **func_string_segment(char *dl_string_ch, char *nth_argument)
 
 
 	char **nv_p = NULL, it_thg;
-	int hd_mag = 0, var_varg = 0, int_pr_var = 0, dl_var = 0, size_ln = 0, int_df_var = 0;
+	int hd_mag = 0, var_varg = 0, int_pr_var = 0,
+	    dl_var = 0, size_ln = 0, int_df_var = 0;
 
 
 

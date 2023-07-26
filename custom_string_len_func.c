@@ -8,13 +8,15 @@
  *
  * Return: Returns integer variable named size_ln.
  */
-int custom_string_len_func(char *dl_string_ch, int current_location, char nth_argument)
+int custom_string_len_func(char *dl_string_ch,
+		int current_location, char nth_argument)
 {
 	int size_ln;
 
 	size_ln = 0;
 
-	while ((dl_string_ch[current_location] != nth_argument) && (dl_string_ch[current_location] != '\0'))
+	while ((dl_string_ch[current_location] != nth_argument) &&
+			(dl_string_ch[current_location] != '\0'))
 	{
 		current_location++;
 		size_ln++;

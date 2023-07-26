@@ -10,6 +10,7 @@
 void RmLL(DL_node_list_t *sh_cs_)
 {
 	DL_node_list_t *jm_var;
+
 	while (sh_cs_ != NULL)
 	{
 		jm_var = sh_cs_;

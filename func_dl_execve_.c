@@ -13,12 +13,9 @@
 int func_dl_execve(char **__var_string_arg, DL_node_list_t *dl_surd, int __dgt)
 {
 	char *_inplace_dr;
-	int klCurrent;
-	int dl_var_2;
+	int klCurrent = 0;
+	int dl_var_2 = 0;
 	pid_t dl_processID_var;
-
-	klCurrent = 0;
-	dl_var_2 = 0;
 
 	if (access(__var_string_arg[0], F_OK) == 0)
 	{

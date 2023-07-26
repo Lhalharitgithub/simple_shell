@@ -16,7 +16,9 @@
 
 
 
-int chd_wkec(DL_node_list_t *dl_surd, char *__now_func, char *path_dircect, char *dl_string_ch, int __dgt)
+int chd_wkec(DL_node_list_t *dl_surd,
+		char *__now_func, char *path_dircect,
+		char *dl_string_ch, int __dgt)
 {
 	int dl_var;
 

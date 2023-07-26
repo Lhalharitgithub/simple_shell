@@ -17,11 +17,13 @@ int _struct_lenght(char *dl_string_ch, char nth_argument)
 
 	while (dl_string_ch[dl_var] != '\0')
 	{
-		if ((dl_string_ch[dl_var] == nth_argument) && (dl_string_ch[dl_var + 1] != nth_argument))
+		if ((dl_string_ch[dl_var] == nth_argument) &&
+				(dl_string_ch[dl_var + 1] != nth_argument))
 		{
 			intDigit++;
 		}
-		if ((dl_string_ch[dl_var] == nth_argument) && (dl_string_ch[dl_var + 1] == '\0'))
+		if ((dl_string_ch[dl_var] == nth_argument) &&
+				(dl_string_ch[dl_var + 1] == '\0'))
 		{
 			intDigit--;
 		}

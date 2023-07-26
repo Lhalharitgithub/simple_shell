@@ -12,17 +12,13 @@
 char *dlConvert_intToStr(int __dgt_num)
 {
 	int dg_nm;
-	int dg_tnt;
-	int dl_var;
-	int dl_var_2;
+	int dg_tnt = 1;
+	int dl_var = 0;
+	int dl_var_2 = 0;
 	int wyd;
 	char *wyg;
 
-	dl_var = 0;
-	dl_var_2 = 0;
 	dg_nm = __dgt_num;
-	dg_tnt = 1;
-
 	if (__dgt_num < 0)
 		dl_var_2 = 1;
 	wyg = malloc(sizeof(char) * (dlNL(dg_nm) + 2 + dl_var_2));

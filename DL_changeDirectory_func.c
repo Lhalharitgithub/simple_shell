@@ -11,7 +11,8 @@
 
 
 
-int dl__change_directory_func(char **dl_string_ch, DL_node_list_t *dl_surd, int __dgt)
+int dl__change_directory_func(char **dl_string_ch,
+		DL_node_list_t *dl_surd, int __dgt)
 {
 	char *__now_func = NULL, *path_dircect = NULL;
 	int rm_pos = 0;

@@ -9,7 +9,8 @@
  * Return: pointer to reallocated memory
  */
 
-void *dl_resize_memory(void *dl_memoryBlock, unsigned int _prior_capacity, unsigned int _revised_capacity)
+void *dl_resize_memory(void *dl_memoryBlock,
+		unsigned int _prior_capacity, unsigned int _revised_capacity)
 {
 	void *var_varg;
 	unsigned int dl_var;

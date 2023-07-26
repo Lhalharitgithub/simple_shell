@@ -25,7 +25,8 @@ char *dl_surd_alloc(char *dl_string_ch, DL_node_list_t *dl_surd)
 		dl_var_int = 0;
 		while ((dl_surd->v_struct_arg)[dl_var_int] == dl_string_ch[dl_var_int])
 			dl_var_int++;
-		if (dl_string_ch[dl_var_int] == '\0' && (dl_surd->v_struct_arg)[dl_var_int] == '=')
+		if (dl_string_ch[dl_var_int] == '\0' &&
+				(dl_surd->v_struct_arg)[dl_var_int] == '=')
 			break;
 		dl_surd = dl_surd->next_arg;
 	}

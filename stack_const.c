@@ -11,7 +11,8 @@
  */
 
 
-int stack_const(char **g_dp, DL_node_list_t *dl_surd, int __dgt, char **_input_)
+int stack_const(char **g_dp, DL_node_list_t *dl_surd,
+		int __dgt, char **_input_)
 {
 
 
