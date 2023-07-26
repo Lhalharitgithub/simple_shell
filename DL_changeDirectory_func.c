@@ -1,17 +1,17 @@
 #include "shell.h"
 
 /**
- * dl__change_directory_func - Function to change shell directory
- * @dl_string_ch: Argument of the function dl__change_directory_func.
- * @dl_surd: Argument of the function dl__change_directory_func.
- * @__dgt: Argument of the function dl__change_directory_func.
+ * cd - Function to change shell directory
+ * @dl_string_ch: Argument of the function cd.
+ * @dl_surd: Argument of the function cd.
+ * @__dgt: Argument of the function cd.
  *
  * Return: Returns 2 or 0.
  */
 
 
 
-int dl__change_directory_func(char **dl_string_ch,
+int cd(char **dl_string_ch,
 		DL_node_list_t *dl_surd, int __dgt)
 {
 	char *__now_func = NULL, *path_dircect = NULL;

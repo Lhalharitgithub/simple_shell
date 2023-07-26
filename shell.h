@@ -50,7 +50,7 @@ void _func_chd(DL_node_list_t *dl_surd, char *__now_func);
 int chd_wkec(DL_node_list_t *dl_surd, char *__now_func,
 		char *path_dircect, char *dl_string_ch, int __dgt);
 
-int dl__change_directory_func(char **dl_string_ch,
+int cd(char **dl_string_ch,
 		DL_node_list_t *dl_surd, int __dgt);
 
 

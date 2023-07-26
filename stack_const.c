@@ -31,7 +31,7 @@ int stack_const(char **g_dp, DL_node_list_t *dl_surd,
 	}
 	else if (_fun_merge_strings(g_dp[0], "cd") == 0)
 	{
-		dl_var = dl__change_directory_func(g_dp, dl_surd, __dgt);
+		dl_var = cd(g_dp, dl_surd, __dgt);
 	}
 	else if (_fun_merge_strings(g_dp[0], "setenv") == 0)
 	{
