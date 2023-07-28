@@ -19,28 +19,6 @@
 
 
 
-
-
-/**
- * struct node_list - A typedef struct
- * struct DL_node_list_t - linked list of typedef struct.
- * @v_struct_arg: Argument of struct.
- * @next_arg: Argument of struct.
- *
- * Return: Returns nothing.
- */
-
-typedef struct node_list
-{
-		char *v_struct_arg;
-		struct node_list *next_arg;
-
-} DL_node_list_t;
-
-
-
-
-
 char *_string_concatenated_funct(char *_allocation, char *_input_origin);
 
 int surd_ang(DL_node_list_t **dl_surd, char *annotation, char *path_dircect);
