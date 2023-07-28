@@ -2,8 +2,6 @@
 #define SHELL_H
 
 
-
-
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <signal.h>
@@ -15,8 +13,6 @@
 #include <wait.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-
-
 
 
 
@@ -35,9 +31,6 @@ typedef struct node_list
 		struct node_list *next_arg;
 
 } DL_node_list_t;
-
-
-
 
 
 
