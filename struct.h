@@ -1,4 +1,5 @@
-
+#ifndef STRUCT_H
+#define STRUCT_H
 
 /**
  * struct node_list - A typedef struct
@@ -15,3 +16,5 @@ typedef struct node_list
 		struct node_list *next_arg;
 
 } DL_node_list_t;
+
+#endif
